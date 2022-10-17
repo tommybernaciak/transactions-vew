@@ -10,7 +10,7 @@ const Balance: FC<IProps> = ({ transactions }) => {
     return acc + current.amount;
   }, 0);
   return (
-    <div className="bg-stone-600 text-stone-50 p-2 h-10 mb-2">
+    <div data-testid="total-balance" className="bg-stone-600 text-stone-50 p-2 h-10 mb-2">
       Total Balance: {balance.toFixed(2)}
     </div>
   );
